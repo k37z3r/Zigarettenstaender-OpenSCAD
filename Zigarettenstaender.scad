@@ -13,7 +13,7 @@ difference(){
     translate([0,sin(0)*60, cos(0)*20+145]) cylinder(h=20, r=4.5, $fn=40);
 }
 difference(){
-    translate([0,0,5]) cylinder(h=130, r=20, $fn=20);
+    translate([0,0,5]) cylinder(h=130, r=20);
     translate([0,0,130]) rotate_extrude(convexity = 10) translate([20, 0, 20]) circle(r = 5);
     translate([0,0,110]) rotate_extrude(convexity = 10) translate([20, 0, 20]) circle(r = 5);
     translate([0,0,90]) rotate_extrude(convexity = 10) translate([20, 0, 20]) circle(r = 5);
@@ -28,5 +28,5 @@ translate([0,0,80]) rotate_extrude(convexity = 10) translate([20, 0, 0]) circle(
 translate([0,0,60]) rotate_extrude(convexity = 10) translate([20, 0, 0]) circle(r = 5);
 translate([0,0,40]) rotate_extrude(convexity = 10) translate([20, 0, 0]) circle(r = 5);
 translate([0,0,20]) rotate_extrude(convexity = 10) translate([20, 0, 0]) circle(r = 5);
-resize(newsize=[120,120,10]) sphere(r=10);
-rotate_extrude(convexity = 10) translate([60, 0,0]) circle(r = 5);
+resize(newsize=[120,120,10]) sphere(r=10, $fn=32);
+rotate_extrude(convexity = 10) translate([60, 0,0]) circle(r = 5, $fn=64);
