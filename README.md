@@ -1,6 +1,6 @@
 # Zigarettenstaender-OpenSCAD
 # Es wird keine Gewährleistung auf Stabilität gegeben!
-## Sourcecode für Zigarettenstaender
+## Sourcecode für Zigarettenstaender (für 63 Zigaretten)
 ![fanta gruesst alle flaschen](https://user-images.githubusercontent.com/105192630/214306623-6f47fe48-ed65-41b3-b80b-6c2e3f029bff.png)
 
 ## Lizenz
