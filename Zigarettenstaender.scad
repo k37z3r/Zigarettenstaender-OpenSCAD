@@ -4,14 +4,13 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-
 Based on a work at https://github.com/k37z3r/Zigarettenstaender-OpenSCAD.
 */
 $fn = 64;
-translate([0, 0,155]) cylinder(h=10,r = 5);
 difference(){
     translate([0,0,155])resize(newsize=[120,120,40]) sphere(r=10, $fn=128);
     for (a = [ 0:15:360]) rotate([0,0,a]) translate([0,sin(48)*60, cos(48)*20+144]) rotate([-cos(48)*40,0,0]) cylinder(h=20, r=4.5, $fn=40);
     for (a = [ 0:18:360]) rotate([0,0,a]) translate([0,sin(34)*60, cos(34)*20+144]) rotate([-cos(48)*15,0,0]) cylinder(h=20, r=4.5, $fn=40);
     for (a = [ 0:30:360]) rotate([0,0,a]) translate([0,sin(22)*60, cos(22)*20+144]) rotate([-cos(48)*8,0,0]) cylinder(h=20, r=4.5, $fn=40);
     for (a = [ 0:60:360]) rotate([0,0,a]) translate([0,sin(11)*60, cos(11)*20+144]) rotate([-cos(48)*5,0,0]) cylinder(h=20, r=4.5, $fn=40);
-    for (a = [ 0:360:360]) rotate([0,0,a]) translate([0,sin(0)*60, cos(0)*20+145]) cylinder(h=20, r=4.5, $fn=40);
+    translate([0,sin(0)*60, cos(0)*20+145]) cylinder(h=20, r=4.5, $fn=40);
 }
 difference(){
     translate([0,0,5]) cylinder(h=130, r=20, $fn=20);
